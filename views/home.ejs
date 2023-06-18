@@ -1,0 +1,10 @@
+<%-include("partials/header")-%>
+<h1 class="col-lg-8 col-lg-offset-2 mx-auto"><%=home%></h1>
+<p class="col-lg-8 col-lg-offset-2 mx-auto"><%=homeStartingContent%></p>
+
+<%posts.forEach((post)=>{%>
+    <h1 class="col-lg-8 col-lg-offset-2 mx-auto"><%=post.title%></h1>
+    <p class="col-lg-8 col-lg-offset-2 mx-auto"><%=post.content.substring(0,100)+"..."%> <a href="/posts/<%=post.title%>">Readmore</a></p>
+<%})%>
+
+<%-include("partials/footer")-%>
