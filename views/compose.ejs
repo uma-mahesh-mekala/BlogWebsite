@@ -1,7 +1,7 @@
 <%-include("partials/header")-%>
 <h1 class="col-lg-8 col-lg-offset-2 mx-auto"><%=compose%></h1>
 <form action="/compose" method="post" class="col-lg-8 col-lg-offset-2 mx-auto">
-  <label for="postTitle">Title</label>
+  <label for="postTitle">Job Title</label>
   <br />
   <input
     class="form-control w-100"
@@ -10,7 +10,7 @@
     id="postTitle"
   />
   <br />
-  <label for="postContent">Post</label> <br />
+  <label for="postContent">Description</label> <br />
   <textarea
     class="form-control w-100"
     name="postContent"
@@ -19,6 +19,6 @@
     rows="5"
   ></textarea>
   <br />
-  <button type="submit" class="btn btn-primary">Publish</button>
+  <button type="submit" class="btn btn-primary">Post Job</button>
 </form>
 <%-include("partials/footer")-%>
